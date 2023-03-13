@@ -29,8 +29,14 @@
 
 
 # ----------- Task 5 --------
-import datetime as dt
-current_date = dt.date.today()
-Date = input("Enter yyyy-mm-dd: ")
-result= Date==current_date                                        # I assume I have a mistake here
-print("Date valid: " + str(result))
+# import datetime as dt
+# current_date = dt.date.today()
+# date = input("Enter yyyy-mm-dd: ")
+# result= date==current_date                                        # I assume I have a mistake here
+# print("Date valid: " + str(result))
+
+age = int(input("Enter your age: "))
+licence = input("Do you have driver's licence (yes or no: ")
+licence = "no"
+result = licence == "yes" and age >= 18                                 # why it is not working when age=true but licence=false ==> False?
+print("You are able to drive:"+ str(result))
